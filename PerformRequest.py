@@ -47,19 +47,18 @@ def matchMaking(jsonNeed):
             DRanker.append(jsonNeed[i])
         else:
             ERanker.append(jsonNeed[i])
-    print("Number of ARankers found :", len(ARanker))
     if(len(ARanker) < 3):
         BRanker = BRanker + ARanker
-    print("Number of BRankers found :", len(BRanker))
+        
     if(len(BRanker) < 3):
         CRanker = CRanker + BRanker
-    print("Number of CRankers found :", len(CRanker))    
+        
     if(len(CRanker) < 3):
-        DRanker = DRanker + CRanker    
-    print("Number of DRankers found :", len(DRanker))
+        DRanker = DRanker + CRanker
+        
     if(len(DRanker) < 3):
         ERanker = ERanker + DRanker
-    print("Number of ERankers found :", len(ERanker))
+        
     matchMake(ARanker, "A Rank")
     matchMake(BRanker, "B Rank")
     matchMake(CRanker, "C Rank")
