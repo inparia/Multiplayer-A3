@@ -112,7 +112,7 @@ def addEditPlayers(playerid, win, lose):
     baseurl = "https://tjda0mnl2k.execute-api.us-east-2.amazonaws.com"
     endpoint = "/DeployStage/"
     headers = {"Player": "application/json"}
-    data = {"PlayerID": {"S" : str(playerid)}, "AWR": {"S" : str(float(int(win) / total))}, "Win": {"S" : win}, "Lose" : {"S" : lose}}
+    data = {"PlayerID": {"S" : str(playerid)}, "AWR": {"S" : str(float(win) / float(total))}, "Win": {"S" : win}, "Lose" : {"S" : lose}}
     requests.put(baseurl + endpoint, data=json.dumps(data), headers=headers)
 
 def connectionLoop(sock):
