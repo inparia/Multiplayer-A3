@@ -20,7 +20,6 @@ def performApiRequest():
     resp = requests.get(baseurl + endpoint)
 
     respJson = resp.json()
-
     firstJson = json.loads(respJson['body']) 
     
     firstJson = ast.literal_eval(str(firstJson["Items"]).strip('[]'))
@@ -47,17 +46,18 @@ def matchMaking(jsonNeed):
             DRanker.append(jsonNeed[i])
         else:
             ERanker.append(jsonNeed[i])
+
     if(len(ARanker) < 3):
         BRanker = BRanker + ARanker
-        
     if(len(BRanker) < 3):
         CRanker = CRanker + BRanker
-        
     if(len(CRanker) < 3):
         DRanker = DRanker + CRanker
-        
     if(len(DRanker) < 3):
         ERanker = ERanker + DRanker
+    if(len(ERanker) < 3):
+        DRanker = DRanker + ERanker
+
         
     matchMake(ARanker, "A Rank")
     matchMake(BRanker, "B Rank")
@@ -68,21 +68,25 @@ def matchMaking(jsonNeed):
     
 def matchMake(tempList, rankType):
     randNum = random.randint(1, 3)
+    winner = {}
     if(len(tempList) >= 3):
         print("-----------------------")
         print(rankType, " Players' fight.")
         if(randNum == 1):
-            tempList[0]["Win"] = str(int(tempList[0]["Win"]) + 1)
+            winner = tempList[0]
+            tempList[0]["Win"] = str(int(tempList[0]["Win"]) + 2)
             tempList[1]["Lose"]  = str(int(tempList[1]["Lose"]) + 1)
             tempList[2]["Lose"]  = str(int(tempList[2]["Lose"]) + 1)
             print("Player ID:", tempList[0]["PlayerID"], " Player Won!")
         elif(randNum == 2):
-            tempList[1]["Win"] = str(int(tempList[1]["Win"])+ 1)
+            winner = tempList[1]
+            tempList[1]["Win"] = str(int(tempList[1]["Win"])+ 2)
             tempList[0]["Lose"]  = str(int(tempList[0]["Lose"]) + 1)
             tempList[2]["Lose"]  = str(int(tempList[2]["Lose"]) + 1)
             print("Player ID:", tempList[1]["PlayerID"], " Player Won!")
         elif(randNum == 3):
-            tempList[2]["Win"] = str(int(tempList[2]["Win"]) + 1)
+            winner = tempList[2]
+            tempList[2]["Win"] = str(int(tempList[2]["Win"]) + 2)
             tempList[1]["Lose"]  = str(int(tempList[1]["Lose"]) + 1)
             tempList[0]["Lose"]  = str(int(tempList[0]["Lose"])+ 1)
             print("Player ID:", tempList[2]["PlayerID"], " Player Won!")
@@ -91,11 +95,20 @@ def matchMake(tempList, rankType):
         addEditPlayers(tempList[1]["PlayerID"], tempList[1]["Win"], tempList[1]["Lose"])
         addEditPlayers(tempList[2]["PlayerID"], tempList[2]["Win"], tempList[2]["Lose"])
 
+        f = open("log.txt", "a")
+        f.write(rankType + " Players' fight. Winner is : " + winner["PlayerID"] + "\n" + "Player ID : " + tempList[0]["PlayerID"] + " Wins : " + tempList[0]["Win"] + " Loses : " + tempList[0]["Lose"]+ "\n"
+        +"Player ID : " + tempList[1]["PlayerID"] + " Wins : " + tempList[1]["Win"] + " Loses : " + tempList[1]["Lose"]+"\n" 
+        +"Player ID : " + tempList[2]["PlayerID"]+ " Wins : " + tempList[2]["Win"]+ " Loses : " + tempList[2]["Lose"]+ "\n")
+        f.close()
         if(len(tempList) >= 3):
             matchMake(tempList[3:], rankType)
+        
+
 
 def addEditPlayers(playerid, win, lose):
     total = int(win) + int(lose)
+    if(total == 0):
+        total = 1
     baseurl = "https://tjda0mnl2k.execute-api.us-east-2.amazonaws.com"
     endpoint = "/DeployStage/"
     headers = {"Player": "application/json"}
@@ -134,7 +147,6 @@ def gameLoop(sock):
     clients_lock.acquire()
     mainJson = performApiRequest()
     matchMaking(mainJson)
-    
     clients_lock.release()
     time.sleep(1)
 
