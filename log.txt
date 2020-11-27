@@ -26,3 +26,115 @@ D Rank Players' fight. Winner is : 16
 Player ID : 20 Wins : 2 Loses : 5
 Player ID : 12 Wins : 2 Loses : 5
 Player ID : 16 Wins : 2 Loses : 5
+E Rank Players' fight. Winner is : 2
+Player ID : 18 Wins : 20 Loses : 16
+Player ID : 16 Wins : 14 Loses : 18
+Player ID : 2 Wins : 28 Loses : 27
+E Rank Players' fight. Winner is : 8
+Player ID : 13 Wins : 20 Loses : 15
+Player ID : 8 Wins : 34 Loses : 25
+Player ID : 9 Wins : 18 Loses : 29
+E Rank Players' fight. Winner is : 5
+Player ID : 1 Wins : 22 Loses : 24
+Player ID : 6 Wins : 20 Loses : 30
+Player ID : 5 Wins : 22 Loses : 26
+E Rank Players' fight. Winner is : 4
+Player ID : 4 Wins : 28 Loses : 24
+Player ID : 19 Wins : 12 Loses : 17
+Player ID : 7 Wins : 30 Loses : 26
+E Rank Players' fight. Winner is : 11
+Player ID : 11 Wins : 16 Loses : 15
+Player ID : 3 Wins : 30 Loses : 21
+Player ID : 20 Wins : 12 Loses : 18
+E Rank Players' fight. Winner is : 12
+Player ID : 12 Wins : 12 Loses : 18
+Player ID : 17 Wins : 14 Loses : 13
+Player ID : 15 Wins : 22 Loses : 12
+C Rank Players' fight. Winner is : 2
+Player ID : 18 Wins : 20 Loses : 17
+Player ID : 16 Wins : 14 Loses : 19
+Player ID : 2 Wins : 30 Loses : 27
+C Rank Players' fight. Winner is : 13
+Player ID : 13 Wins : 22 Loses : 15
+Player ID : 8 Wins : 34 Loses : 26
+Player ID : 1 Wins : 22 Loses : 25
+C Rank Players' fight. Winner is : 5
+Player ID : 6 Wins : 20 Loses : 31
+Player ID : 5 Wins : 24 Loses : 26
+Player ID : 4 Wins : 28 Loses : 25
+C Rank Players' fight. Winner is : 19
+Player ID : 19 Wins : 14 Loses : 17
+Player ID : 7 Wins : 30 Loses : 27
+Player ID : 11 Wins : 16 Loses : 16
+C Rank Players' fight. Winner is : 3
+Player ID : 3 Wins : 32 Loses : 21
+Player ID : 20 Wins : 12 Loses : 19
+Player ID : 12 Wins : 12 Loses : 19
+C Rank Players' fight. Winner is : 15
+Player ID : 17 Wins : 14 Loses : 14
+Player ID : 10 Wins : 10 Loses : 10
+Player ID : 15 Wins : 24 Loses : 12
+D Rank Players' fight. Winner is : 9
+Player ID : 9 Wins : 20 Loses : 30
+Player ID : 14 Wins : 4 Loses : 4
+Player ID : 9 Wins : 20 Loses : 30
+C Rank Players' fight. Winner is : 16
+Player ID : 18 Wins : 20 Loses : 18
+Player ID : 16 Wins : 16 Loses : 19
+Player ID : 2 Wins : 30 Loses : 28
+C Rank Players' fight. Winner is : 9
+Player ID : 13 Wins : 22 Loses : 16
+Player ID : 8 Wins : 34 Loses : 27
+Player ID : 9 Wins : 22 Loses : 30
+C Rank Players' fight. Winner is : 4
+Player ID : 1 Wins : 22 Loses : 26
+Player ID : 5 Wins : 24 Loses : 27
+Player ID : 4 Wins : 30 Loses : 25
+C Rank Players' fight. Winner is : 11
+Player ID : 19 Wins : 14 Loses : 18
+Player ID : 7 Wins : 30 Loses : 28
+Player ID : 11 Wins : 18 Loses : 16
+C Rank Players' fight. Winner is : 10
+Player ID : 17 Wins : 14 Loses : 15
+Player ID : 10 Wins : 12 Loses : 10
+Player ID : 14 Wins : 4 Loses : 5
+D Rank Players' fight. Winner is : 12
+Player ID : 6 Wins : 20 Loses : 32
+Player ID : 20 Wins : 12 Loses : 20
+Player ID : 12 Wins : 14 Loses : 19
+C Rank Players' fight. Winner is : 16
+Player ID : 18 Wins : 20 Loses : 19
+Player ID : 16 Wins : 18 Loses : 19
+Player ID : 2 Wins : 30 Loses : 29
+C Rank Players' fight. Winner is : 13
+Player ID : 13 Wins : 24 Loses : 16
+Player ID : 8 Wins : 34 Loses : 28
+Player ID : 9 Wins : 22 Loses : 31
+C Rank Players' fight. Winner is : 4
+Player ID : 1 Wins : 22 Loses : 27
+Player ID : 5 Wins : 24 Loses : 28
+Player ID : 4 Wins : 32 Loses : 25
+C Rank Players' fight. Winner is : 7
+Player ID : 19 Wins : 14 Loses : 19
+Player ID : 7 Wins : 32 Loses : 28
+Player ID : 11 Wins : 18 Loses : 17
+C Rank Players' fight. Winner is : 17
+Player ID : 12 Wins : 14 Loses : 20
+Player ID : 17 Wins : 16 Loses : 15
+Player ID : 10 Wins : 12 Loses : 11
+C Rank Players' fight. Winner is : 15
+Player ID : 14 Wins : 4 Loses : 6
+Player ID : 3 Wins : 32 Loses : 22
+Player ID : 15 Wins : 26 Loses : 12
+D Rank Players' fight. Winner is : 20
+Player ID : 6 Wins : 20 Loses : 34
+Player ID : 20 Wins : 14 Loses : 20
+Player ID : 6 Wins : 20 Loses : 34
+C Rank Players' fight. Winner is : 16
+Player ID : 18 Wins : 20 Loses : 20
+Player ID : 16 Wins : 20 Loses : 19
+Player ID : 2 Wins : 30 Loses : 30
+C Rank Players' fight. Winner is : 9
+Player ID : 8 Wins : 34 Loses : 29
+Player ID : 9 Wins : 24 Loses : 31
+Player ID : 1 Wins : 22 Loses : 28
